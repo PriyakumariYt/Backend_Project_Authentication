@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  <link rel="stylesheet" href="css/style.css">
+  {{!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Young+Serif&display=swap" rel="stylesheet"> --}}
+<link rel = "stylesheet" 
+   href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+   crossorigin = "anonymous">
+
+<!-- jQuery Library -->
+<script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+   integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+   crossorigin = "anonymous">
+</script>
+
+<!-- Popper -->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+   integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+   crossorigin = "anonymous">
+</script>
+
+<!-- Compiled and Minified Bootstrap JavaScript -->
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+   integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+   crossorigin = "anonymous">
+</script>
+{{!-- <style>
+  .main_header {
+ background-color: #889c89;
+  height: 100vh;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.row{
+  margin: auto;
+
+}
+.checkbox-left {
+  text-align: left;
+  margin-left: 38%;
+  align-items: center;
+}
+.form-check-label {
+  vertical-align: middle;
+  margin-left: 5px; 
+}
+.form-label {
+  color: rgb(41, 35, 35);
+  font-size: 20px;
+}
+  .form-container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color:blue;
+
+}
+
+/* Style the form labels */
+
+
+/* Style the form input fields */
+.form-control {
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: rgb(226, 226, 226);
+  border: 0.5px solid #4b1515;
+  border-radius: 3px;
+}
+
+/* Style the select element */
+.form-select {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 0.5px solid #270707;
+  border-radius: 3px;
+
+}
+
+
+.form-check-label {
+  font-weight: normal;
+}
+
+
+.btn_register {
+ background-color: #b4a40d;
+  color: #240c0c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn_register:hover{
+    background-color: #45a049;
+}
+.form-control input[type="text"]{
+  background-color: transparent;
+  color: black;
+  outline: none;
+border: none;
+border-bottom: 0.5px solid #220909;
+}
+
+</style> --}}
+
+  <body>
+      {{> header}}
+   <div class="container-fluid main_header">
+  
+    <div class="row">
+    <div class="col-md-10 col-12 mx-auto">
+  <form class="row g-3" action="/register" method="POST">
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" name="firstName" class="form-control" id="validationDefault01" value="" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Last name</label>
+    <input type="text" name="lastName" class="form-control" id="validationDefault02" value="" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefaultUsername" class="form-label">Username</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" name="email" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <label for="validationDefaultUsername" class="form-label">Password</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" name="password" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">City</label>
+    <input type="text" name="city" class="form-control" id="validationDefault03" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">State</label>
+    <select class="form-select" name = "option" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>Delhi</option>
+       <option>Mumbai</option>
+        <option>Kolkata</option>
+         <option>Bihar</option>
+            <option>others</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault05" class="form-label">Zip</label>
+    <input type="text" name ="zip" class="form-control" id="validationDefault05" required>
+  </div>
+
+  <div class="col-12">
+  <div class="form-check checkbox-left">
+    <input class="form-check-input" name="checkbox" type="checkbox" value="true" id="invalidCheck2" required>
+    <label class="form-check-label" for="invalidCheck2">
+      Agree to terms and conditions
+    </label>
+  </div>
+</div>
+  <div class="col-12">
+    <button class="btn_register" type="submit">Submit form</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
+   {{>footer}}
+</body>
+</html>

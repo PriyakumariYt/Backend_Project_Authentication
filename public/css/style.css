@@ -1,0 +1,525 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* HEADER START*/
+  nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+} 
+  nav h1 {
+    flex: 1; 
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(25, 48, 133);
+  }
+  .header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 2.5%;
+    position: relative;
+  }
+  .header-2 .navbar {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-2 .navbar a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+    color: rgb(36, 32, 32);
+    text-decoration: none;
+  }
+  .header-2 .navbar a:hover {
+    background: rgb(55, 96, 134);
+    color: #fff;
+  }
+
+
+  .navbar .fa-solid{
+    margin: 5px;
+    font-size: 35px;
+
+    
+  }
+  /* HEADER END */
+  /* INDEX START */
+  
+  .container{
+  
+  
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .box{
+    margin: 25px;
+  }
+  .box img{
+    border: 7px solid blueviolet;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+  }
+  .box h1{
+margin: 45px 30px;
+font-size: 2.5rem;
+  }
+  .box p{
+    margin: 45px 30px;
+font-size: 1.2rem;
+  }
+  
+  /* INDEX END */
+  /* ABOUT START */
+
+  .About{
+    /* background: #ccc2c2; */
+  
+    width: 100%;
+margin:50px 0 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Aboutbox{
+    margin: 15px;
+    width: 500px;
+  }
+  .Aboutbox h1{
+    margin: 45px 30px;
+    font-size: 2.5rem;
+      }
+      .Aboutbox p{
+        margin: 45px 30px;
+    font-size: 1.2rem;
+      }
+  .Aboutbox2{
+    width: 700px;
+    height: 500px;
+  }
+  .Aboutbox2 .image{
+    border: 7px solid blueviolet;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 150px;
+ }
+
+  .Aboutbox2 .img2{
+    height: 300px;
+    width: 300px;
+    border: 7px solid blueviolet;
+    border-radius: 50%;
+   }
+
+    .btn_about {
+      text-decoration: none;
+      color:white;
+      border: 1.5px solid rgb(214, 227, 241);
+      border-radius: 10px;
+      background: #2134a0;
+      padding: 12px 45px;
+      margin: 40px 0;
+      transition: 0.5s;
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  /* ABOUT END */
+  /* CONTACT START */
+  .main{
+    margin: 50px auto;     
+ }
+ .container_Contact{
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     height: 100vh;
+     width: 90%;
+     margin: auto;
+     background: rgb(231, 227, 227);
+   }
+ .box_Contact{
+      margin: auto;
+     /* height: 500px; */
+     width: 500px;
+     /* border: 2px solid red; */
+}
+.box_Contact h1{
+text-align: center;
+margin: auto;
+font-size: 5rem;
+color: rgb(47, 47, 61);
+}
+ .box_Contact img{
+   object-fit: contain;
+     height: 500px;
+     width: 500px;
+}
+.smallbox_Contact{
+     height: 100px;
+     width: 300px;
+  
+     margin: 20px 50px;
+     display: flex;
+     justify-content: start;
+  }
+ .smallbox_Contact .fa-solid,
+.smallbox_Contact .fa-brands{
+font-size: 40px;
+margin: 25px 0 0px 15px;
+text-align: center;
+height: 40px;
+width: 40px;
+font-size: 20px;
+color:white;
+margin: 25px 0 0 15px ;
+margin-bottom: 50px;
+line-height: 40px;
+border-radius: 5px;
+cursor: pointer;
+background: rgb(2,0,36);
+background-image: linear-gradient(to right top, #4d7dc6, #1f98db, #00b2e7, #00caec, #12e2eb);
+ }
+.text{
+     margin: 20px 0 40px 40px; 
+}
+.text h2{
+     margin-bottom: 10px;
+     color: rgb(29, 60, 87);
+}
+.text p{
+     color: black;
+     opacity: 0.5;
+}
+/* CONTACT END */
+  /* BLOGS START */
+  
+.Blog_container{
+    margin-bottom: 50px;
+  }
+   .Blog_container h1 {
+    color: rgb(24, 2, 2);
+    font-size: 40px;
+    margin: auto;
+    padding: 20px;
+    
+    text-align: center;
+    border-radius: 2px solid red;
+    
+  }
+  .Blog_container h1 span{
+      color: rgb(131, 35, 35);
+  }
+  .card_blog {
+  background: #ffffff;
+    -webkit-box-shadow: 1px 5px 31px 2px rgba(205, 210, 212, 0.78);
+    -moz-box-shadow: 1px 5px 31px 2px rgba(43, 47, 48, 0.78);
+    box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+    transition: 1s;
+  border-radius: 10px;
+  }
+  .card_blog img{
+      height: 250px;
+      width: 250px;
+  }
+  
+  .cards_blog {
+    width: 80%;
+   text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .btn_blog {
+        text-decoration: none;
+        color:rgb(56, 4, 4);
+        border-bottom: 1px solid black;
+        align-items: center;
+        padding: 7px;
+        margin: 10px auto;
+        width: 25%;
+        transition: 0.5s;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+   .card_blog h3{
+  font-size: 25px;
+  color: black;
+  opacity: 0.6;
+  font-weight: 300;
+  text-align: center;
+    }
+    .card_blog p{
+      font-size: 15px;
+      color: grey;
+      opacity: 0.7;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    }
+  @media (max-width: 767px) {
+    .cards_blog {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .cards_blog {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .cards_blog {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  /* BLOGS END */
+  /* LOGIN START */
+  .container_login {
+     right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 100px;
+    max-width:400px;
+    padding: 16px;
+    max-height: 400px;
+      text-align: left;
+      box-shadow: 5px 5px 10px 5px rgba(70, 35, 18, 0.288); 
+  }
+   .container_login h1 {
+    text-align: center;
+    color: rgb(59, 15, 15);
+  }
+  .container_login label {
+    display: block;
+  color: rgb(192, 141, 141);
+  font-size: 1.2rem;
+  font-weight: 200;
+    margin: 10px 15px 10px 30px;
+  }
+ .container_login input[type="text"]{
+    background-color: transparent;
+    color: rgb(29, 5, 5);
+  }
+  
+.container_login input[type="text"],
+ .container_login input[type="password"],
+ .container_login input[type="submit"] 
+   {
+    width: 80%;
+    padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 0.5px solid #241717;
+  background-color: transparent;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    margin: auto;   
+  }
+ .container_login  input[type="submit"] {
+    background-color: #889c89;
+    color: rgb(107, 36, 36); 
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1rem;
+    width: 50%;
+    border: none;
+  }
+  .container_login input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+.btn_login {
+ background-color: #889c89;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn_login:hover{
+    background-color: #45a049;
+}
+ .container_login input[type="text"]{
+  background-color: transparent;
+  color: black;
+  outline: none;
+border: none;
+border-bottom: 0.5px solid #fdfdfd;
+}
+  /* LOGIN END */
+  /* REGISTER START */
+  .main_header {
+    background-color: #889c89;
+     height: 100vh;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+   }
+   .row{
+     margin: auto;
+   
+   }
+   .checkbox-left {
+     text-align: left;
+     margin-left: 38%;
+     align-items: center;
+   }
+   .form-check-label {
+     vertical-align: middle;
+     margin-left: 5px; 
+   }
+   .form-label {
+     color: rgb(41, 35, 35);
+     font-size: 20px;
+   }
+     .form-container {
+     margin: 20px auto;
+     padding: 20px;
+     width: 80%;
+     max-width: 600px;
+     background-color:blue;
+   
+   }
+   .form-control {
+     margin-bottom: 15px;
+     padding: 8px;
+     background-color: rgb(226, 226, 226);
+     border: 0.5px solid #4b1515;
+     border-radius: 3px;
+   }
+.form-select {
+     margin-bottom: 15px;
+     padding: 8px;
+     border: 0.5px solid #270707;
+     border-radius: 3px;
+   }
+    .form-check-label {
+     font-weight: normal;
+   }
+   .btn_register {
+    background-color: #b4a40d;
+     color: #240c0c;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 3px;
+     cursor: pointer;
+   }
+   .btn_register:hover{
+       background-color: #45a049;
+   }
+   .form-control input[type="text"]{
+     background-color: transparent;
+     color: black;
+     outline: none;
+   border: none;
+   border-bottom: 0.5px solid #220909;
+   }
+  /* REGISTE END */
+
+  /* SERVICE START */
+.container_Service h1 {
+    color: rgb(24, 2, 2);
+    font-size: 40px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .container_Service h1 span{
+      color: rgb(131, 35, 35);
+  }
+  .card_Service {
+    padding: 2rem;
+    background: #f3ecec;
+/* border: 1px solid rgb(127, 133, 127); */
+    -webkit-box-shadow: 1px 5px 31px 2px rgba(205, 210, 212, 0.78);
+    -moz-box-shadow: 1px 5px 31px 2px rgba(43, 47, 48, 0.78);
+    box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+    transition: 1s;
+  border-radius: 10px;
+  }
+  .card_Service img{
+      height: 250px;
+      width: 250px;
+     }
+   .cards_Service {
+    width: 80%;
+   text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  padding-bottom: 50px;
+  }
+  .btn_Service {
+        text-decoration: none;
+        color:rgb(56, 4, 4);
+     border-bottom: 1px solid black;
+        align-items: center;
+        padding: 7px;
+        margin: 10px auto;
+        width: 25%;
+        transition: 0.5s;
+        font-size: 1.2rem;
+        font-weight: 500;
+ }
+.card_Service h3{
+  font-size: 25px;
+  color: black;
+  opacity: 0.6;
+  font-weight: 300;
+  text-align: center;
+    }
+    .card_Service p{
+      font-size: 15px;
+      color: grey;
+      opacity: 0.7;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    }
+  @media (max-width: 767px) {
+    .cards_Service {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .cards_Service {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Media query for screens larger than 1023px */
+  @media (min-width: 1024px) {
+    .cards_Service {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  /* SERVICE END */
+  /* FOOTER START */
+
+  /* FOOTER END */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+} 
+  nav h1 {
+    flex: 1; 
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(25, 48, 133);
+  }
+  .header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 2.5%;
+    position: relative;
+  }
+  .header-2 .navbar {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-2 .navbar a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+    color: rgb(36, 32, 32);
+    text-decoration: none;
+  }
+  .header-2 .navbar a:hover {
+    background: rgb(55, 96, 134);
+    color: #fff;
+  }
+
+
+  .navbar .fa-solid{
+    margin: 5px;
+    font-size: 35px;
+
+    
+  }
+</style>
+</head>
+<body>
+    <div class="header-2">
+        <nav class="navbar">
+          <i class="fa-solid fa-people-arrows"></i>
+     <h1>Electrochips</h1>
+          <a href="/">Home</a>
+          <a href="/login">Login</a>
+          <a href="/register">Register</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blogs</a>
+          <a href="/service">Service</a>
+          <a href="/contact">Contact</a>
+               <a href="/logout">LogOut</a>
+        </nav>
+       
+      </div>
+    
+</body>
+</html>

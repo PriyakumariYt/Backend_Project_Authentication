@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    {{!-- <style>
+    
+        .main{
+           margin: 50px auto;     
+        }
+        .container_Contact{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            width: 90%;
+            margin: auto;
+            background: rgb(231, 227, 227);
+          }
+        .box{
+             margin: auto;
+            /* height: 500px; */
+            width: 500px;
+            /* border: 2px solid red; */
+ }
+ .box h1{
+    text-align: center;
+    margin: auto;
+    font-size: 5rem;
+    color: rgb(47, 47, 61);
+ }
+        .box img{
+          object-fit: contain;
+            height: 500px;
+            width: 500px;
+}
+ .smallbox{
+            height: 100px;
+            width: 300px;
+         
+            margin: 20px 50px;
+            display: flex;
+            justify-content: start;
+         }
+        .smallbox .fa-solid,
+       .smallbox .fa-brands{
+font-size: 40px;
+
+margin: 25px 0 0px 15px;
+text-align: center;
+
+height: 40px;
+  width: 40px;
+  font-size: 20px;
+  color:white;
+  margin: 25px 0 0 15px ;
+  margin-bottom: 50px;
+  line-height: 40px;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(2,0,36);
+  background-image: linear-gradient(to right top, #4d7dc6, #1f98db, #00b2e7, #00caec, #12e2eb);
+        }
+  
+        .text{
+            margin: 20px 0 40px 40px; 
+         }
+         .text h2{
+            margin-bottom: 10px;
+            color: rgb(29, 60, 87);
+         }
+         .text p{
+            color: black;
+            opacity: 0.5;
+         }
+      
+
+
+    </style> --}}
+</head>
+<body>
+     {{> header}}
+    <main class="main">
+<div class="container_Contact">
+        <div class="box_Contact">
+            <h1>Contact Us</h1>
+            <img src="https://freesvg.org/img/1550549301.png" alt="">
+        </div>
+        <div class="box_Contact">
+        <div class="smallbox_Contact">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="text">
+                <h2>Address</h2>
+                <p>Enter your name</p>
+            </div>
+        </div>
+        <div class="smallbox_Contact">
+            <i class="fa-solid fa-phone"></i>
+            <div class="text">
+                <h2>Number</h2>
+                <p>+91 9123659856</p>
+            </div>
+        </div>
+
+        <div class="smallbox_Contact">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="text">
+                <h2>E-mail</h2>
+                <p>priyayt@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="smallbox_Contact">
+            <i class="fa-brands fa-gg-circle"></i>
+            <div class="text">
+                <h2>Website</h2>
+                <p>priyawebite</p>
+            </div>
+        </div>
+     </div>
+</main>
+ {{> footer}}
+</body>
+</html>
